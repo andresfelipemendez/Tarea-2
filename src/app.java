@@ -13,8 +13,8 @@ public class app {
 		AgregarInventario(3003, "silla", 20000);
 		AgregarInventario(3004, "Silla Ejecutiva", 25000);
 		
-		var c = new Cliente();
-		var a = new Asesor();
+		var c = new Cliente("Alva lucia");
+		var a = new Asesor("Arturo", 123);
 
 		var f = new Factura(a, c);
 		f.AgregarItem(3001, 1);
@@ -22,8 +22,6 @@ public class app {
 		f.AgregarItem(3003, 1);
 		f.AgregarItem(3004, 1);
 		f.imprimirFactura();
-		
-		System.out.println("Hello Workd");
 	}
 	
 	static void AgregarInventario(int id, String nombre, int precio) {
